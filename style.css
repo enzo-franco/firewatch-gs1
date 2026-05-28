@@ -146,7 +146,7 @@ nav {
 
 .hero-sub {
     max-width: 600px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     color: var(--muted);
 }
 
@@ -157,6 +157,26 @@ nav {
     flex-wrap: wrap;
 }
 
+/* IMAGENS */
+
+.hero-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto 0;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.section-img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
 /* ESTATÍSTICAS HERO */
 
 .hero-stats {
@@ -164,7 +184,7 @@ nav {
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     padding-top: 2.5rem;
     border-top: 1px solid var(--border);
 }
@@ -239,7 +259,7 @@ nav {
 .section-desc {
     max-width: 600px;
     color: var(--muted);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 /* SEÇÃO 1 — CARDS DE DADOS */
@@ -249,6 +269,7 @@ nav {
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
+    margin-top: 1rem;
 }
 
 .info-card {
@@ -497,6 +518,9 @@ footer {
     text-align: center;
     padding: 2rem;
     color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 footer strong {

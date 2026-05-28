@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/Arrioch-Orbz-Orbz-fire.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -37,7 +38,7 @@
 
   <main>
 
-    <!-- SEÇÃO HERO -->
+    <!-- HERO -->
     <section id="inicio" class="hero">
       <div class="container">
 
@@ -50,14 +51,19 @@
         </h1>
 
         <p class="hero-sub">
-          O FireWatch usa dados satelitais da NASA para identificar focos de calor
-          em tempo real e alertar autoridades e moradores de áreas de risco em menos de 3 minutos.
+          Monitoramento satelital em tempo real com alertas em menos de 3 minutos.
         </p>
 
         <div class="hero-cta">
           <a href="#aplicacao" class="btn btn-primary">Ver no mapa</a>
           <a href="#tecnologia" class="btn btn-ghost">Como funciona</a>
         </div>
+
+        <img
+          src="images/hero-satelite.svg"
+          alt="Ilustração de satélite detectando foco de calor na Terra"
+          class="hero-img"
+        >
 
         <div class="hero-stats">
           <div class="stat-item">
@@ -81,40 +87,47 @@
     <section id="problema" class="section-padded">
       <div class="container">
 
-        <p class="section-label">O PROBLEMA</p>
-
+        <p class="section-label">01 — O PROBLEMA</p>
         <h2 class="section-title">Por que isso é urgente?</h2>
 
         <p class="section-desc">
-          O Brasil perde milhões de hectares todo ano para queimadas que poderiam ter sido
-          controladas com alertas precoces. Sem monitoramento automático, o fogo cresce por dias
-          antes de qualquer resposta.
+          O Brasil registra mais de 220 mil focos de calor por ano.
         </p>
+
+        <p class="section-desc">
+          Sem monitoramento automático, o fogo pode crescer por dias sem resposta.
+        </p>
+
+        <img
+          src="images/mapa-focos.svg"
+          alt="Mapa do Brasil com focos de calor ativos marcados em laranja"
+          class="section-img"
+        >
 
         <div class="cards-grid">
 
           <div class="info-card">
             <div class="card-num">220K</div>
-            <div class="card-unit">focos de calor / ano</div>
-            <p class="card-desc">Registrados pelo INPE no território brasileiro em 2023</p>
+            <div class="card-unit">focos / ano</div>
+            <p class="card-desc">Registrados pelo INPE em 2023.</p>
           </div>
 
           <div class="info-card">
             <div class="card-num">72h</div>
             <div class="card-unit">tempo médio de resposta</div>
-            <p class="card-desc">Sem monitoramento automatizado, o fogo cresce por dias</p>
+            <p class="card-desc">Sem satélite, o fogo cresce por dias.</p>
           </div>
 
           <div class="info-card">
             <div class="card-num">R$48B</div>
             <div class="card-unit">prejuízo estimado</div>
-            <p class="card-desc">Perdas agropecuárias e ambientais por queimadas no Brasil</p>
+            <p class="card-desc">Perdas agropecuárias e ambientais no Brasil.</p>
           </div>
 
           <div class="info-card">
             <div class="card-num">90%</div>
             <div class="card-unit">são evitáveis</div>
-            <p class="card-desc">De acordo com o INPE, a maioria tem origem humana</p>
+            <p class="card-desc">A maioria tem origem humana, segundo o INPE.</p>
           </div>
 
         </div>
@@ -132,14 +145,18 @@
     <section id="tecnologia" class="section-padded section-alt">
       <div class="container">
 
-        <p class="section-label">A TECNOLOGIA</p>
-
+        <p class="section-label">02 — A TECNOLOGIA</p>
         <h2 class="section-title">Como detectamos o fogo</h2>
 
         <p class="section-desc">
-          Combinamos dados orbitais abertos, sensores IoT e análise em Python
-          para transformar imagens termais em alertas acionáveis.
+          Dados orbitais, sensores IoT e Python integrados num pipeline de alertas.
         </p>
+
+        <img
+          src="images/sensor-arduino.svg"
+          alt="Diagrama do circuito Arduino com sensor de fumaça MQ-2 e temperatura LM35"
+          class="section-img"
+        >
 
         <div class="tech-grid">
 
@@ -147,8 +164,7 @@
             <div class="card-icon">🛸</div>
             <h3 class="card-title">NASA FIRMS</h3>
             <p class="card-desc">
-              Imagens dos satélites MODIS e VIIRS com resolução de 375 metros
-              e atualização a cada passagem orbital.
+              Imagens termais dos satélites MODIS e VIIRS, atualizadas a cada órbita.
             </p>
             <span class="tech-tag">Dados orbitais</span>
           </div>
@@ -157,8 +173,7 @@
             <div class="card-icon">🔌</div>
             <h3 class="card-title">Arduino IoT</h3>
             <p class="card-desc">
-              Sensores de temperatura (LM35) e fumaça (MQ-2) em campo.
-              Complementam os dados satelitais com leituras locais.
+              Sensores de fumaça (MQ-2) e temperatura (LM35) simulados em campo.
             </p>
             <span class="tech-tag">Edge Computing</span>
           </div>
@@ -167,8 +182,7 @@
             <div class="card-icon">🐍</div>
             <h3 class="card-title">Python Analytics</h3>
             <p class="card-desc">
-              Modelagem de propagação usando funções exponenciais.
-              Prevê área afetada com base no vento e umidade.
+              Modelagem exponencial para prever propagação com base no vento e umidade.
             </p>
             <span class="tech-tag">Análise preditiva</span>
           </div>
@@ -177,8 +191,7 @@
             <div class="card-icon">📡</div>
             <h3 class="card-title">API de Alertas</h3>
             <p class="card-desc">
-              Pipeline que processa detecções e dispara notificações
-              para autoridades e moradores da área de risco.
+              Notificações automáticas para autoridades e moradores em risco.
             </p>
             <span class="tech-tag">Automação</span>
           </div>
@@ -187,8 +200,7 @@
             <div class="card-icon">🗺️</div>
             <h3 class="card-title">Dashboard Geoespacial</h3>
             <p class="card-desc">
-              Mapa interativo com focos de calor ativos, histórico regional
-              e camadas de risco sobrepostas a dados climáticos.
+              Mapa com focos ativos, histórico e camadas de risco climático.
             </p>
             <span class="tech-tag">Visualização</span>
           </div>
@@ -197,8 +209,7 @@
             <div class="card-icon">☁️</div>
             <h3 class="card-title">INPE Open Data</h3>
             <p class="card-desc">
-              Banco histórico de focos de calor do INPE — base para padrões
-              sazonais e validação das detecções.
+              Banco histórico do INPE para padrões sazonais e validação das detecções.
             </p>
             <span class="tech-tag">Dados históricos</span>
           </div>
@@ -212,12 +223,11 @@
     <section id="objetivos" class="section-padded">
       <div class="container">
 
-        <p class="section-label">OBJETIVOS</p>
-
+        <p class="section-label">03 — OBJETIVOS</p>
         <h2 class="section-title">O que o FireWatch entrega</h2>
 
         <p class="section-desc">
-          Cada objetivo foi pensado para reduzir o tempo entre a detecção e a resposta.
+          Quatro objetivos para reduzir o tempo entre detecção e resposta.
         </p>
 
         <div class="obj-grid">
@@ -226,7 +236,7 @@
             <span class="obj-num">01</span>
             <div>
               <h3 class="obj-title">Detecção precoce automatizada</h3>
-              <p class="card-desc">Identificar focos de calor em até 3 minutos após nova imagem orbital disponível.</p>
+              <p class="card-desc">Identificar focos em até 3 minutos após nova imagem orbital.</p>
             </div>
           </div>
 
@@ -234,7 +244,7 @@
             <span class="obj-num">02</span>
             <div>
               <h3 class="obj-title">Alertas geolocalizados</h3>
-              <p class="card-desc">Notificar usuários cadastrados por proximidade ao foco de calor de calor ativo.</p>
+              <p class="card-desc">Notificar usuários por proximidade ao foco ativo.</p>
             </div>
           </div>
 
@@ -250,7 +260,7 @@
             <span class="obj-num">04</span>
             <div>
               <h3 class="obj-title">Relatórios para gestores</h3>
-              <p class="card-desc">Painel de análise histórica por bioma, estado e período.</p>
+              <p class="card-desc">Painel histórico por bioma, estado e período.</p>
             </div>
           </div>
 
@@ -263,39 +273,43 @@
     <section id="publico" class="section-padded section-alt">
       <div class="container">
 
-        <p class="section-label">PÚBLICO-ALVO</p>
-
+        <p class="section-label">04 — PÚBLICO-ALVO</p>
         <h2 class="section-title">Quem usa o FireWatch</h2>
 
         <p class="section-desc">
-          Do cidadão em área de risco ao gestor público que precisa de dados confiáveis
-          para agir com rapidez.
+          Do morador em área de risco ao gestor público que precisa agir rápido.
         </p>
+
+        <img
+          src="images/alerta-notificacao.svg"
+          alt="Celular recebendo notificação de alerta de queimada do FireWatch"
+          class="section-img"
+        >
 
         <div class="pub-grid">
 
           <div class="pub-card">
             <div class="card-icon">🚒</div>
             <h3 class="card-title">Bombeiros</h3>
-            <p class="card-desc">Recebem coordenadas do foco de calor e estimativa de propagação para planejar o combate.</p>
+            <p class="card-desc">Coordenadas do foco e estimativa de propagação para planejar o combate.</p>
           </div>
 
           <div class="pub-card">
             <div class="card-icon">🌿</div>
             <h3 class="card-title">IBAMA & INPE</h3>
-            <p class="card-desc">Acesso ao histórico analítico para políticas públicas e relatórios de desmatamento.</p>
+            <p class="card-desc">Histórico analítico para políticas públicas e relatórios ambientais.</p>
           </div>
 
           <div class="pub-card">
             <div class="card-icon">🧑‍🌾</div>
             <h3 class="card-title">Produtores Rurais</h3>
-            <p class="card-desc">Alertas preventivos para proteger propriedade, colheita e rebanho a tempo.</p>
+            <p class="card-desc">Alertas preventivos para proteger propriedade e colheita a tempo.</p>
           </div>
 
           <div class="pub-card">
             <div class="card-icon">🏘️</div>
             <h3 class="card-title">Moradores de Risco</h3>
-            <p class="card-desc">Notificação no celular quando há foco de calor ativo no raio configurado da localização.</p>
+            <p class="card-desc">Notificação no celular quando há foco no raio configurado.</p>
           </div>
 
         </div>
@@ -309,25 +323,23 @@
 
         <div class="impacto-texto">
 
-          <p class="section-label">IMPACTO & BENEFÍCIOS</p>
-
+          <p class="section-label">05 — IMPACTO & BENEFÍCIOS</p>
           <h2 class="section-title">Cada minuto conta</h2>
 
           <p class="section-desc">
-            FireWatch transforma horas de espera em minutos de resposta —
-            salvando vidas, fauna, flora e recursos econômicos.
+            De 72 horas de espera para menos de 45 minutos de resposta.
           </p>
 
           <div class="ben-lista">
 
             <div class="ben-item">
               <strong>🎯 96× mais rápido</strong>
-              <p>De 72h para menos de 45 minutos da detecção até o combate ativo.</p>
+              <p>Da detecção até o combate ativo no campo.</p>
             </div>
 
             <div class="ben-item">
               <strong>🌱 70% menos área perdida</strong>
-              <p>Estimativa baseada em estudos de alerta precoce em incêndios florestais.</p>
+              <p>Com alerta precoce, o fogo é contido antes de se alastrar.</p>
             </div>
 
             <div class="ben-item">
@@ -336,8 +348,8 @@
             </div>
 
             <div class="ben-item">
-              <strong>💸 Dados abertos</strong>
-              <p>100% baseado em APIs públicas da NASA e INPE — custo próximo de zero.</p>
+              <strong>💸 Custo próximo de zero</strong>
+              <p>100% baseado em APIs públicas da NASA e INPE.</p>
             </div>
 
           </div>
@@ -375,16 +387,15 @@
     <section id="aplicacao" class="section-padded section-cta">
       <div class="container">
 
-        <p class="section-label">APLICAÇÃO</p>
-
+        <p class="section-label">06 — APLICAÇÃO</p>
         <h2 class="section-title">Acesse o sistema</h2>
 
         <p class="section-desc">
-         O FireWatch propõe uma plataforma integrada com painel web, API para defesa civil e alertas móveis — este projeto apresenta o protótipo conceitual da solução.
+          Protótipo conceitual de plataforma integrada com painel web e alertas móveis.
         </p>
 
         <div class="hero-cta">
-          <a href="#" class="btn btn-primary">Acessar o mapa ao vivo</a>
+          <a href="#problema" class="btn btn-primary">Acessar o mapa</a>
           <a href="#" class="btn btn-ghost">Documentação da API</a>
         </div>
 

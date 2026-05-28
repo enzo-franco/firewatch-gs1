@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d0d10"/>
+  <!-- Silhueta simplificada do Brasil -->
+  <path d="M200,60 L280,50 L350,70 L400,55 L440,80 L460,130 L450,180 L420,220 L440,270 L430,320 L380,350 L330,340 L300,310 L260,330 L220,300 L200,250 L180,200 L160,150 L170,100 Z" 
+        fill="#13131a" stroke="#2a2a4a" stroke-width="1.5" opacity="0.8"/>
+  <!-- Focos de calor (pontos laranja/vermelho) -->
+  <circle cx="290" cy="150" r="5" fill="#ff4500" opacity="0.9"/>
+  <circle cx="320" cy="170" r="4" fill="#ff6600" opacity="0.8"/>
+  <circle cx="260" cy="200" r="6" fill="#ff4500" opacity="0.9"/>
+  <circle cx="350" cy="190" r="3" fill="#ff8c00" opacity="0.7"/>
+  <circle cx="310" cy="220" r="5" fill="#ff4500" opacity="0.9"/>
+  <circle cx="280" cy="250" r="4" fill="#ff6600" opacity="0.8"/>
+  <circle cx="240" cy="180" r="3" fill="#ff8c00" opacity="0.6"/>
+  <circle cx="370" cy="160" r="4" fill="#ff4500" opacity="0.8"/>
+  <circle cx="330" cy="130" r="3" fill="#ff6600" opacity="0.7"/>
+  <circle cx="390" cy="210" r="5" fill="#ff4500" opacity="0.9"/>
+  <circle cx="250" cy="130" r="2" fill="#ff8c00" opacity="0.6"/>
+  <circle cx="420" cy="180" r="3" fill="#ff4500" opacity="0.7"/>
+  <!-- Pulso em foco principal -->
+  <circle cx="310" cy="220" r="12" fill="none" stroke="#ff4500" stroke-width="1" opacity="0.4"/>
+  <circle cx="310" cy="220" r="18" fill="none" stroke="#ff4500" stroke-width="0.5" opacity="0.2"/>
+  <!-- Legenda -->
+  <circle cx="50" cy="340" r="5" fill="#ff4500"/>
+  <text x="62" y="344" font-family="monospace" font-size="11" fill="#7a8694">Foco de calor ativo</text>
+  <!-- Grid/satélite lines -->
+  <line x1="0" y1="133" x2="600" y2="133" stroke="#2a2a4a" stroke-width="0.5" stroke-dasharray="3,6"/>
+  <line x1="0" y1="266" x2="600" y2="266" stroke="#2a2a4a" stroke-width="0.5" stroke-dasharray="3,6"/>
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#2a2a4a" stroke-width="0.5" stroke-dasharray="3,6"/>
+  <line x1="400" y1="0" x2="400" y2="400" stroke="#2a2a4a" stroke-width="0.5" stroke-dasharray="3,6"/>
+  <text x="10" y="20" font-family="monospace" font-size="10" fill="#ff4500" opacity="0.7">NASA FIRMS — BRASIL</text>
+</svg>
